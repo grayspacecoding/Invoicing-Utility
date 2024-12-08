@@ -1,6 +1,6 @@
 public/.htaccess
 public/dependencies/bootstrap
-public/favicon.ico
+public/favicon.*
 env.json
 vendor
 qrcode.png
