@@ -1,0 +1,5 @@
+public/.htaccess
+public/dependencies/bootstrap
+env.json
+vendor
+qrcode.png
