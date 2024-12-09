@@ -35,3 +35,6 @@ An abbreviated/shortened version of your company's name. For example, this name 
 
 ### admin_secret
 When you run `mfagen.php` to set a new admin multifactor key, this value is automatically updated, and is used to validate your six-digit multifator key.
+
+### logo_path
+Point this to your logo image file location, relative to `base_url`.
