@@ -19,9 +19,24 @@ $method = $uri[1]?: 'home';
 # Routing
 $permitted = [
     'home' => 0,
+    'admin' => 0,
+    '404' => 0,
+    'checkadminkey' => 1
 ];
+
+# Page not found
 if( !in_array($method, array_keys($permitted)) ) {
     $method = '404';
 }
 
-define('method', $method);
+# Load and launch a model
+if($permitted[$method] ==1){
+    require 'vendor/autoload.php';
+    require "models/$method.php";
+    exit;
+}
+
+# Launch a view
+else{
+    define('method', $method);
+}
